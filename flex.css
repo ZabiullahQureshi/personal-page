@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+   }
+   body {
+   background: url("https://bit.ly/hw4zabi"); 
+   opacity: .5;
+   background-repeat: no-repeat;
+   }
+   .container {
+   max-width: 1400px;
+  
+ }
+   .container > * {
+   background-color: lightblue;
+   font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+   }
+   flex-grow: 1;
+
+.box1 {
+  flex-basis: 1400px;  
+}
+.box2 {
+  flex-basis: 657px; 
+}
+.box3 {
+  flex-basis: 355px;
+}
+.box4 {
+  flex-basis: 355px;
+}
+.box5 {
+  flex-basis: 695px;
+}
+.box6 {
+  flex-basis: 693px;
+}
