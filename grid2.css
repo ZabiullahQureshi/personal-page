@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: 
+    /*url(https://cdn.imgchest.com/files/myd5crddq4b.png);*/
+    background-repeat: no-repeat;
+    max-width: 1243px;
+    min-height: 1194px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+.container {
+  display: grid;
+  grid-template-rows: minmax(67px, auto) 292px 435px 340px 60px;
+  grid-template-columns:  minmax(20px,300px) minmax(20px,570px) minmax(20px,370px);  
+}
+.box1 {
+    grid-area: one;
+}
+.box2 {
+    grid-area: two;
+}
+.box3 {
+    grid-area: three;
+}
+.box4 {
+    grid-area: four;
+}
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+}
+.box7 {
+    grid-area: seven;
+}
+.container {
+grid-template-areas:
+"one six six"
+"two two two"
+"three three seven"
+"four four four"
+"five five five";
+}
+.box6 ul{
+  display: flex;
+  color: #fff;
+  list-style-type: none;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+.box6 ul .add{
+    flex-basis: 118px;
+    border: 1px solid white;
+    margin-top: 10px;
+    height: 33px;
+    padding-top: 7.4px;
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+    padding-left: 39px;
+    border-radius: 46px;
+}
+.box6 ul .job{
+    flex-basis: 75px;
+    margin-top: 10px;
+    padding-top: 8px;
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+    padding-left: 14px;
+}
+.box6 ul .sum{
+ flex-basis: 100px;
+    margin-top: 10px;
+    padding-top: 8px;
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+    padding-left: 1px;
+    letter-spacing: -0.2px;
+}
+.box6 ul .emp{
+flex-basis: 93px;
+    margin-top: 10px;
+    padding-top: 8px;
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+    letter-spacing: -0.7px;
+}
+.box6 ul .login{
+ flex-basis: 223px;
+    border: 2px solid white;
+    margin-top: 10px;
+    padding-top: 6.5px;
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+    padding-left: 39px;
+    border-radius: 46px;
+    letter-spacing: -0.3px;
+    margin-right: 35px;
+}
+
+@media (max-width: 500px) {
+.container {
+grid-template-columns: 100%;
+grid-template-areas:
+"one"
+"two"
+"three"
+"four"
+"five"
+"six"
+"seven";
+}
+}
