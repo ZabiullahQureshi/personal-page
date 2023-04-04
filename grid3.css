@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: 
+    url(https://cdn.imgchest.com/files/myd5crddq4b.png);
+    background-repeat: no-repeat;
+    max-width: 1243px;
+    min-height: 1194px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+.container {
+  display: grid;
+  grid-template-rows: minmax(67px, auto) 292px 435px 340px 60px;
+  grid-template-columns:  minmax(20px,300px) minmax(20px,570px) minmax(20px,370px);  
+}
+.box1 {
+    grid-area: one;
+}
+.box2 {
+    grid-area: two;
+}
+.box3 {
+    grid-area: three;
+}
+.box4 {
+    grid-area: four;
+}
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+}
+.box7 {
+    grid-area: seven;
+}
+.container {
+grid-template-areas:
+"one two three"
+"six two three"
+"seven seven seven"
+"four four four"
+"five five five";
+}
+
+.box1{
+  /background-color: blue;/
+}
+.box1 img{
+  height: 52.39px;
+  width: 250px;
+}
+
+
+.box6{
+  background-color: #caced4;
+  text-transform: uppercase;
+}
+
+.box6 ul{
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  font-size: 16px;
+  padding-left: 0px;
+}
+
+.box6 ul .add{
+    border-bottom: 1px solid black;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.box6 ul .job{
+    border-bottom: 1px solid black;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.box6 ul .sum{
+    border-bottom: 1px solid black;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.box6 ul .emp{
+    border-bottom: 1px solid black;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.box6 ul .login{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+body {
+ background-image: none;
+ opacity: 1;
+}
+body > img:nth-of-type(1) {
+ display: none;
+}
